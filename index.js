@@ -4,12 +4,7 @@ import route from "./routes/index.js";
 import bodyParser from "body-parser";
 
 const app = express();
-// try{
-//     await db.authenticate();
-//     console.log('Database Terhubung');
-// } catch(error) {
-//     console.log(error);
-// }
+
 
 app.use(bodyParser.json());
 app.use("/api",route);
